@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tienne:wght@400;700;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html, body {
+    background-color:#FDFBF0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 0.5px solid #ccc;
+  }
+  header {
+    font-family: 'Tienne', serif;
+    color: #4a3b31;
+  }
+  h2, h3 {
+    font-family: 'Tinos', serif;
+    color: #4a3b31;
+  }
+  .main-nav {
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+  }
+  .logo img {
+    height: 150px;
+    width: auto;
+    display: block;
+  }
+  .main-nav a {
+    text-decoration: none;
+    color: #4a3b31;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  .main-nav a:hover {
+    color: #E8b552;
+    background-color: #4a3b31;
+  }
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing:border-box;
+  }
+  .intro-image {
+    width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .intro-text {
+    width: 60%;
+    text-align: left;
+  }
+  .intro-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .intro-text p {
+    font-size: 1.25rem;
+    font-family: 'Commissioner', serif;
+  }
+  .features-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+    text-align: center;
+  } 
+  .feature {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  .feature h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #4a3b31;
+  }
+  .feature p {
+    font-size: 1.25rem;
+    font-family: 'Commissioner', serif;
+    color: #4a3b31;
+  }
+  .bottom-image img {
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: 40px auto;
+    border-radius: 10px;
+  }
+  footer {
+    background-color: #FDFBF0;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  .footer-nav a {
+    text-decoration: none;
+    color: #4a3b31;
+    font-weight: 500;
+  }
+  @media (max-width: 768px) {
+    .features-section {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
