@@ -12,7 +12,7 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 20px 60px;
-    border-bottom: 0.5px solid #ccc;
+    border-bottom: 0.5px solid #ef8552;
   }
   header {
     font-family: 'Tienne', serif;
@@ -21,6 +21,7 @@ html, body {
   h2, h3 {
     font-family: 'Tinos', serif;
     color: #4a3b31;
+    text-shadow: 2px 2px 4px rgba(232,181,82, 0.6)
   }
   .main-nav {
     display: flex;
@@ -55,7 +56,7 @@ html, body {
   }
   .intro-image {
     width: 40%;
-    border-radius: 10px;
+    border-radius: 60px;
     object-fit: cover;
   }
   .intro-text {
@@ -80,9 +81,9 @@ html, body {
   .feature {
     flex: 1;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #ef8552;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 6px rgba(210, 107, 58, 0.5);
   }
   .feature h3 {
     font-size: 3rem;
@@ -105,19 +106,24 @@ html, body {
     background-color: #FDFBF0;
     padding: 20px 60px;
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     font-size: 0.85rem;
-    color: #666;
+    color: #4a3b31;
   }
   .footer-nav a {
     text-decoration: none;
     color: #4a3b31;
+    gap: 20px;
     font-weight: 500;
   }
   .footer-nav a:hover {
     color: #E8b552;
     background-color: #4a3b31;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    padding: 1px 2px;
   }
   /* code for form */
 /* Style inputs with type="text", select elements and textareas */
