@@ -48,20 +48,36 @@ html, body {
   }
 .intro-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     padding: 0 40px;
-    box-sizing:border-box;
+    box-sizing: border-box;
   }
-  .intro-image {
+.intro-section.reverse {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.intro-image {
     width: 40%;
     border-radius: 60px;
+}
+.intro-image img {
     object-fit: cover;
-  }
+}
   .intro-text {
     width: 60%;
     text-align: left;
+}
+  .note-text {
+    width: auto;
+    text-align: center;
+    margin: 0 25%;
+  }
+  .note-text p {
+    font-size: 1.1rem;
+    font-family: 'Commissioner', serif;
   }
   .intro-text h2 {
     font-size: 3rem;
@@ -163,8 +179,14 @@ label {
     color: #4a3b31;
 }
   @media (max-width: 768px) {
-    .features-section {
+    .features-section,
+    .intro-section,
+    .intro-section.reverse  {
       flex-direction: column;
       gap: 20px;
     }
-  }
+    .intro-image,
+    .intro-text {
+        width:100%;
+    }
+}
